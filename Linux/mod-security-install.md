@@ -21,11 +21,11 @@ Edit ModSecurity configuration file /etc/httpd/conf.d/mod_security.conf and look
 ```
 # tail /var/log/httpd/error_log
 
-[Sat Mar15 16 09:20:58 2014] [notice] ModSecurity for Apache/2.7.3 (http://www.modsecurity.org/) configured.
-[Sat Mar15 16 09:20:58 2014] [notice] ModSecurity: APR compiled version=”1.3.9″; loaded version=”1.3.9″
-[Sat Mar15 16 09:20:58 2014] [notice] ModSecurity: PCRE compiled version=”7.8 “; loaded version=”7.8 2008-09-05″
-[Sat Mar15 16 09:20:58 2014] [notice] ModSecurity: LUA compiled version=”Lua 5.1″
-[Sat Mar15 16 09:20:58 2014] [notice] ModSecurity: LIBXML compiled version=”2.7.6″
+[Thu Mar25 16 19:20:58 2021] [notice] ModSecurity for Apache/2.7.3 (http://www.modsecurity.org/) configured.
+[Thu Mar25 16 19:20:58 2021] [notice] ModSecurity: APR compiled version=”1.3.9″; loaded version=”1.3.9″
+[Thu Mar25 16 19:20:58 2021] [notice] ModSecurity: PCRE compiled version=”7.8 “; loaded version=”7.8 2008-09-05″
+[Thu Mar25 16 19:20:58 2021] [notice] ModSecurity: LUA compiled version=”Lua 5.1″
+[Thu Mar25 16 19:20:58 2021] [notice] ModSecurity: LIBXML compiled version=”2.7.6″
 
 ```
 
@@ -44,7 +44,7 @@ cut -d" -f1 | sort -n | uniq -c | sort -n
 This will give output like this:
 ```
 129 990011 example.com /feed/
-4668 950004 example.com /wp-content/themes/drone/jquery.cookie.js
-29070 950004 www.example.com /wp-content/themes/drone/jquery.cookie.js
+4668 950004 example.com /wp-content/themes/magic/jquery.cookie.js
+29070 950004 www.example.com /wp-content/themes/magic/jquery.cookie.js
 ```
-So we can see that the ModSecurity rule ID 950004 has been triggered at least 33,738 between example.com and www.example.com when trying to request the /wp-content/themes/drone/jquery.cookie.js file.
+So we can see that the ModSecurity rule ID 950004 has been triggered at least 33,738 between example.com and www.example.com when trying to request the /wp-content/themes/magic/jquery.cookie.js file.
