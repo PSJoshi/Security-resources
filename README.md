@@ -12,3 +12,23 @@ This repository contains useful links related to information security,penetratio
 * Open source security auditing tool to search and dump system configuration - https://github.com/trimstray/otseca
 * System Security Checker is a bundle of small shell scripts to assess your computer security - https://github.com/infertux/sysechk
  
+### Tomcat hardening
+* Tomcat CIS script - https://github.com/nikhil1232/apache-tomcat-9.0-CIS-Benchmark-script
+* Security hardened tomcat docker container - https://github.com/Unidata/tomcat-docker
+* Tomcat security scanner - https://github.com/p0dalirius/ApacheTomcatScanner
+
+* https://www.upguard.com/blog/15-ways-to-secure-apache-tomcat-8
+* Tomcat installation bash script - https://github.com/isurunix/tomcat-install-script/blob/master/tomcat-install-script.sh
+
+### Nginx hardening
+* https://github.com/IAmATeaPot418/nginx-hardening
+* https://gist.github.com/mko-x/4b63b6a1528151bd5c6a2dbd84dac006
+
+* https://gist.github.com/plentz/6737338
+* https://github.com/michyweb/nginx-security-conf
+
+### Debian OS hardening
+* https://github.com/maldevel/blue-team/blob/master/hardening/debian-server-9-hardening-lvl1.sh
+
+### OpenSSH hardening (Mozilla)
+* https://github.com/mozilla/infosec.mozilla.org/blob/master/docs/guidelines/openssh.md
